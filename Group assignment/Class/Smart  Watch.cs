@@ -9,7 +9,7 @@ namespace Group_assignment.Class
     class Smart__Watch:Electronics
     {
         private bool waterResistance;
-        public Smart__Watch(bool waterResistance, string item, string id, int quantity, int price, DateTime manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(item, id, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
+        public Smart__Watch(string model, bool waterResistance, string item, int quantity, double price, string manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(model,item, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
         {
             WaterResistance = waterResistance;
             

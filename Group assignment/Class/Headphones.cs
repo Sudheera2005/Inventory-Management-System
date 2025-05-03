@@ -11,7 +11,7 @@ namespace Group_assignment.Class
     {
         private bool wireless;
         private bool noiseCancellation;
-        public Headphones(bool wirless, bool noiseCancellation, string item, string id, int quantity, int price, DateTime manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(item, id, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
+        public Headphones(string model,bool wirless, bool noiseCancellation, string item, int quantity, double price, string manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(model, item, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
         {
             NoiseCancellation = noiseCancellation;
             Wireless = wirless;

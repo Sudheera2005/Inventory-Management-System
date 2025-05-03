@@ -41,27 +41,28 @@
             batchInput = new TextBox();
             brandInput = new TextBox();
             dropdown = new ComboBox();
-            laptopRam = new Label();
-            laptopGpu = new Label();
-            laptopScreen = new Label();
-            smwatch = new Label();
-            laptoRam = new TextBox();
-            laptopScreentext = new TextBox();
-            laptopGpuytext = new TextBox();
-            RamPhone = new TextBox();
-            smatwatch = new CheckBox();
-            head = new Label();
+            Ram = new Label();
+            Gpu = new Label();
+            Screen = new Label();
+            smart = new Label();
+            option1 = new TextBox();
+            option3 = new TextBox();
+            option2 = new TextBox();
+            wirelessclik = new CheckBox();
+            wireless = new Label();
             headnoice = new Label();
-            lphone = new Label();
-            lstoragephone = new Label();
-            headnoce = new CheckBox();
-            storagePhonetext = new TextBox();
+            storege = new Label();
+            option4 = new CheckBox();
+            button1 = new Button();
+            label7 = new Label();
+            modeltext = new TextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 294);
+            label1.Location = new Point(416, 96);
             label1.Name = "label1";
             label1.Size = new Size(65, 20);
             label1.TabIndex = 0;
@@ -69,7 +70,7 @@
             // 
             // quntityInput
             // 
-            quntityInput.Location = new Point(196, 294);
+            quntityInput.Location = new Point(558, 93);
             quntityInput.Name = "quntityInput";
             quntityInput.Size = new Size(125, 27);
             quntityInput.TabIndex = 1;
@@ -77,7 +78,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 133);
+            label2.Location = new Point(23, 177);
             label2.Name = "label2";
             label2.Size = new Size(41, 20);
             label2.TabIndex = 2;
@@ -86,16 +87,16 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 187);
+            label3.Location = new Point(23, 231);
             label3.Name = "label3";
             label3.Size = new Size(141, 20);
             label3.TabIndex = 3;
-            label3.Text = "Manufacturing Date";
+            label3.Text = "Manufacturing year ";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 243);
+            label4.Location = new Point(23, 287);
             label4.Name = "label4";
             label4.Size = new Size(177, 20);
             label4.TabIndex = 4;
@@ -104,7 +105,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(416, 89);
+            label5.Location = new Point(416, 133);
             label5.Name = "label5";
             label5.Size = new Size(104, 20);
             label5.TabIndex = 5;
@@ -113,7 +114,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 89);
+            label6.Location = new Point(23, 133);
             label6.Name = "label6";
             label6.Size = new Size(48, 20);
             label6.TabIndex = 6;
@@ -121,35 +122,35 @@
             // 
             // priceInput
             // 
-            priceInput.Location = new Point(196, 133);
+            priceInput.Location = new Point(207, 177);
             priceInput.Name = "priceInput";
             priceInput.Size = new Size(125, 27);
             priceInput.TabIndex = 7;
             // 
             // manuInput
             // 
-            manuInput.Location = new Point(196, 184);
+            manuInput.Location = new Point(207, 228);
             manuInput.Name = "manuInput";
             manuInput.Size = new Size(125, 27);
             manuInput.TabIndex = 8;
             // 
             // warrInput
             // 
-            warrInput.Location = new Point(196, 240);
+            warrInput.Location = new Point(207, 284);
             warrInput.Name = "warrInput";
             warrInput.Size = new Size(125, 27);
             warrInput.TabIndex = 9;
             // 
             // batchInput
             // 
-            batchInput.Location = new Point(555, 82);
+            batchInput.Location = new Point(555, 126);
             batchInput.Name = "batchInput";
             batchInput.Size = new Size(125, 27);
             batchInput.TabIndex = 10;
             // 
             // brandInput
             // 
-            brandInput.Location = new Point(196, 86);
+            brandInput.Location = new Point(207, 130);
             brandInput.Name = "brandInput";
             brandInput.Size = new Size(125, 27);
             brandInput.TabIndex = 11;
@@ -164,152 +165,166 @@
             dropdown.TabIndex = 12;
             dropdown.SelectedIndexChanged += dropdown_SelectedIndexChanged_1;
             // 
-            // laptopRam
+            // Ram
             // 
-            laptopRam.AutoSize = true;
-            laptopRam.Location = new Point(416, 133);
-            laptopRam.Name = "laptopRam";
-            laptopRam.Size = new Size(39, 20);
-            laptopRam.TabIndex = 13;
-            laptopRam.Text = "Ram";
+            Ram.AutoSize = true;
+            Ram.Location = new Point(416, 183);
+            Ram.Name = "Ram";
+            Ram.Size = new Size(39, 20);
+            Ram.TabIndex = 13;
+            Ram.Text = "Ram";
             // 
-            // laptopGpu
+            // Gpu
             // 
-            laptopGpu.AutoSize = true;
-            laptopGpu.Location = new Point(416, 184);
-            laptopGpu.Name = "laptopGpu";
-            laptopGpu.Size = new Size(36, 20);
-            laptopGpu.TabIndex = 14;
-            laptopGpu.Text = "Gpu";
+            Gpu.AutoSize = true;
+            Gpu.Location = new Point(416, 234);
+            Gpu.Name = "Gpu";
+            Gpu.Size = new Size(36, 20);
+            Gpu.TabIndex = 14;
+            Gpu.Text = "Gpu";
             // 
-            // laptopScreen
+            // Screen
             // 
-            laptopScreen.AutoSize = true;
-            laptopScreen.Location = new Point(416, 240);
-            laptopScreen.Name = "laptopScreen";
-            laptopScreen.Size = new Size(84, 20);
-            laptopScreen.TabIndex = 15;
-            laptopScreen.Text = "Screen Size";
+            Screen.AutoSize = true;
+            Screen.Location = new Point(416, 290);
+            Screen.Name = "Screen";
+            Screen.Size = new Size(84, 20);
+            Screen.TabIndex = 15;
+            Screen.Text = "Screen Size";
             // 
-            // smwatch
+            // smart
             // 
-            smwatch.AutoSize = true;
-            smwatch.Location = new Point(411, 409);
-            smwatch.Name = "smwatch";
-            smwatch.Size = new Size(121, 20);
-            smwatch.TabIndex = 16;
-            smwatch.Text = "Water Resistance";
+            smart.AutoSize = true;
+            smart.Location = new Point(416, 186);
+            smart.Name = "smart";
+            smart.Size = new Size(121, 20);
+            smart.TabIndex = 16;
+            smart.Text = "Water Resistance";
             // 
-            // laptoRam
+            // option1
             // 
-            laptoRam.Location = new Point(555, 130);
-            laptoRam.Name = "laptoRam";
-            laptoRam.Size = new Size(125, 27);
-            laptoRam.TabIndex = 17;
+            option1.Location = new Point(555, 180);
+            option1.Name = "option1";
+            option1.Size = new Size(125, 27);
+            option1.TabIndex = 17;
             // 
-            // laptopScreentext
+            // option3
             // 
-            laptopScreentext.Location = new Point(556, 236);
-            laptopScreentext.Name = "laptopScreentext";
-            laptopScreentext.Size = new Size(125, 27);
-            laptopScreentext.TabIndex = 19;
+            option3.Location = new Point(556, 286);
+            option3.Name = "option3";
+            option3.Size = new Size(125, 27);
+            option3.TabIndex = 19;
             // 
-            // laptopGpuytext
+            // option2
             // 
-            laptopGpuytext.Location = new Point(555, 181);
-            laptopGpuytext.Name = "laptopGpuytext";
-            laptopGpuytext.Size = new Size(125, 27);
-            laptopGpuytext.TabIndex = 20;
-            laptopGpuytext.TextChanged += laptopGpuytext_TextChanged;
+            option2.Location = new Point(555, 231);
+            option2.Name = "option2";
+            option2.Size = new Size(125, 27);
+            option2.TabIndex = 20;
+            option2.TextChanged += laptopGpuytext_TextChanged;
             // 
-            // RamPhone
+            // wirelessclik
             // 
-            RamPhone.Location = new Point(558, 317);
-            RamPhone.Name = "RamPhone";
-            RamPhone.Size = new Size(125, 27);
-            RamPhone.TabIndex = 21;
+            wirelessclik.AutoSize = true;
+            wirelessclik.Location = new Point(556, 241);
+            wirelessclik.Name = "wirelessclik";
+            wirelessclik.Size = new Size(18, 17);
+            wirelessclik.TabIndex = 22;
+            wirelessclik.UseVisualStyleBackColor = true;
             // 
-            // smatwatch
+            // wireless
             // 
-            smatwatch.AutoSize = true;
-            smatwatch.Location = new Point(196, 412);
-            smatwatch.Name = "smatwatch";
-            smatwatch.Size = new Size(18, 17);
-            smatwatch.TabIndex = 22;
-            smatwatch.UseVisualStyleBackColor = true;
-            // 
-            // head
-            // 
-            head.AutoSize = true;
-            head.Location = new Point(16, 409);
-            head.Name = "head";
-            head.Size = new Size(64, 20);
-            head.TabIndex = 23;
-            head.Text = "Wireless";
+            wireless.AutoSize = true;
+            wireless.Location = new Point(416, 241);
+            wireless.Name = "wireless";
+            wireless.Size = new Size(64, 20);
+            wireless.TabIndex = 23;
+            wireless.Text = "Wireless";
             // 
             // headnoice
             // 
             headnoice.AutoSize = true;
-            headnoice.Location = new Point(12, 372);
+            headnoice.Location = new Point(416, 183);
             headnoice.Name = "headnoice";
             headnoice.Size = new Size(133, 20);
             headnoice.TabIndex = 24;
             headnoice.Text = "Noise Cancellation";
             // 
-            // lphone
+            // storege
             // 
-            lphone.AutoSize = true;
-            lphone.Location = new Point(411, 324);
-            lphone.Name = "lphone";
-            lphone.Size = new Size(41, 20);
-            lphone.TabIndex = 25;
-            lphone.Text = "RAM";
+            storege.AutoSize = true;
+            storege.Location = new Point(416, 237);
+            storege.Name = "storege";
+            storege.Size = new Size(61, 20);
+            storege.TabIndex = 26;
+            storege.Text = "Storage";
             // 
-            // lstoragephone
+            // option4
             // 
-            lstoragephone.AutoSize = true;
-            lstoragephone.Location = new Point(411, 372);
-            lstoragephone.Name = "lstoragephone";
-            lstoragephone.Size = new Size(61, 20);
-            lstoragephone.TabIndex = 26;
-            lstoragephone.Text = "Storage";
+            option4.AutoSize = true;
+            option4.Location = new Point(558, 186);
+            option4.Name = "option4";
+            option4.Size = new Size(18, 17);
+            option4.TabIndex = 27;
+            option4.UseVisualStyleBackColor = true;
             // 
-            // headnoce
+            // button1
             // 
-            headnoce.AutoSize = true;
-            headnoce.Location = new Point(196, 382);
-            headnoce.Name = "headnoce";
-            headnoce.Size = new Size(18, 17);
-            headnoce.TabIndex = 27;
-            headnoce.UseVisualStyleBackColor = true;
+            button1.Location = new Point(416, 346);
+            button1.Name = "button1";
+            button1.Size = new Size(275, 46);
+            button1.TabIndex = 28;
+            button1.Text = "Save";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // storagePhonetext
+            // label7
             // 
-            storagePhonetext.Location = new Point(558, 372);
-            storagePhonetext.Name = "storagePhonetext";
-            storagePhonetext.Size = new Size(125, 27);
-            storagePhonetext.TabIndex = 28;
+            label7.AutoSize = true;
+            label7.Location = new Point(23, 93);
+            label7.Name = "label7";
+            label7.Size = new Size(52, 20);
+            label7.TabIndex = 29;
+            label7.Text = "Model";
+            // 
+            // modeltext
+            // 
+            modeltext.Location = new Point(207, 96);
+            modeltext.Name = "modeltext";
+            modeltext.Size = new Size(125, 27);
+            modeltext.TabIndex = 30;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(115, 346);
+            button2.Name = "button2";
+            button2.Size = new Size(275, 46);
+            button2.TabIndex = 31;
+            button2.Text = "Quite";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(754, 438);
-            Controls.Add(storagePhonetext);
-            Controls.Add(headnoce);
-            Controls.Add(lstoragephone);
-            Controls.Add(lphone);
+            Controls.Add(button2);
+            Controls.Add(modeltext);
+            Controls.Add(label7);
+            Controls.Add(button1);
+            Controls.Add(option4);
+            Controls.Add(storege);
             Controls.Add(headnoice);
-            Controls.Add(head);
-            Controls.Add(smatwatch);
-            Controls.Add(RamPhone);
-            Controls.Add(laptopGpuytext);
-            Controls.Add(laptopScreentext);
-            Controls.Add(laptoRam);
-            Controls.Add(smwatch);
-            Controls.Add(laptopScreen);
-            Controls.Add(laptopGpu);
-            Controls.Add(laptopRam);
+            Controls.Add(wireless);
+            Controls.Add(wirelessclik);
+            Controls.Add(option2);
+            Controls.Add(option3);
+            Controls.Add(option1);
+            Controls.Add(smart);
+            Controls.Add(Screen);
+            Controls.Add(Gpu);
+            Controls.Add(Ram);
             Controls.Add(dropdown);
             Controls.Add(brandInput);
             Controls.Add(batchInput);
@@ -345,20 +360,23 @@
         private TextBox batchInput;
         private TextBox brandInput;
         private ComboBox dropdown;
-        private Label laptopRam;
-        private Label laptopGpu;
-        private Label laptopScreen;
-        private Label smwatch;
-        private TextBox laptoRam;
-        private TextBox laptopScreentext;
-        private TextBox laptopGpuytext;
+        private Label Ram;
+        private Label Gpu;
+        private Label Screen;
+        private Label smart;
+        private TextBox option1;
+        private TextBox option3;
+        private TextBox option2;
         private TextBox RamPhone;
-        private CheckBox smatwatch;
-        private Label head;
+        private CheckBox wirelessclik;
+        private Label wireless;
         private Label headnoice;
-        private Label lphone;
-        private Label lstoragephone;
-        private CheckBox headnoce;
+        private Label storege;
+        private CheckBox option4;
         private TextBox storagePhonetext;
+        private Button button1;
+        private Label label7;
+        private TextBox modeltext;
+        private Button button2;
     }
 }

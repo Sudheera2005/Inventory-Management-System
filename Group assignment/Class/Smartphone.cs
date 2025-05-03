@@ -11,7 +11,7 @@ namespace Group_assignment.Class
         private string ram;
         private string storage;
 
-        public Smartphone(string ram, string storage, string item, string id, int quantity, int price, DateTime manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand):base(item, id, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber,  brand)
+        public Smartphone(string model, string ram, string storage, string item, int quantity, double price, string manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(model, item, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
         {
             Ram = ram;
             Storage = storage;

@@ -12,7 +12,7 @@ namespace Group_assignment.Class
         private string gpu;
         private string screenSize;
        
-        public Laptop(string ram, string gpu,string screenSize, string item, string id, int quantity, int price, DateTime manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(item, id, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
+        public Laptop(string model,string ram, string gpu,string screenSize, string item, int quantity, double price, string manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(model, item, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
         {
             Ram = ram;
             Gpu = gpu;
