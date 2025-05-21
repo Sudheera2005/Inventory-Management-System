@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Group_assignment.Class
+﻿namespace InventoryManagementSystem.Classes
 {
-    class Laptop:Electronics
+    public class Laptop : Electronics
     {
         private string ram;
         private string gpu;
         private string screenSize;
-       
-        public Laptop(string model,string ram, string gpu,string screenSize, string item, int quantity, double price, string manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(model, item, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
+
+        public Laptop(string model, string ram, string gpu, string screenSize, string itemType,
+                     int quantity, double price, string manufacturingDate,
+                     int warrantyPeriodInMonths, string batchNumber, string brand)
+            : base(model, itemType, quantity, price, manufacturingDate,
+                  warrantyPeriodInMonths, batchNumber, brand)
         {
             Ram = ram;
             Gpu = gpu;

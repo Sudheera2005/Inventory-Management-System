@@ -1,6 +1,6 @@
 ﻿namespace Group_assignment
 {
-    partial class Form1
+    partial class addItem
     {
         /// <summary>
         ///  Required designer variable.
@@ -163,6 +163,7 @@
             dropdown.Name = "dropdown";
             dropdown.Size = new Size(151, 28);
             dropdown.TabIndex = 12;
+            dropdown.Text = "Item :";
             dropdown.SelectedIndexChanged += dropdown_SelectedIndexChanged_1;
             // 
             // Ram
@@ -235,7 +236,7 @@
             // wireless
             // 
             wireless.AutoSize = true;
-            wireless.Location = new Point(416, 241);
+            wireless.Location = new Point(417, 238);
             wireless.Name = "wireless";
             wireless.Size = new Size(64, 20);
             wireless.TabIndex = 23;
@@ -253,7 +254,7 @@
             // storege
             // 
             storege.AutoSize = true;
-            storege.Location = new Point(416, 237);
+            storege.Location = new Point(420, 241);
             storege.Name = "storege";
             storege.Size = new Size(61, 20);
             storege.TabIndex = 26;
@@ -270,12 +271,13 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Lime;
             button1.Location = new Point(416, 346);
             button1.Name = "button1";
             button1.Size = new Size(275, 46);
             button1.TabIndex = 28;
             button1.Text = "Save";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label7
@@ -296,15 +298,16 @@
             // 
             // button2
             // 
+            button2.BackColor = Color.Red;
             button2.Location = new Point(115, 346);
             button2.Name = "button2";
             button2.Size = new Size(275, 46);
             button2.TabIndex = 31;
             button2.Text = "Quite";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click_1;
             // 
-            // Form1
+            // addItem
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -338,7 +341,7 @@
             Controls.Add(label2);
             Controls.Add(quntityInput);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "addItem";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
