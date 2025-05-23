@@ -2,7 +2,10 @@
 using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Data;
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
 using System.Windows.Forms;
 
 namespace Group_assignment.Class
@@ -411,6 +414,7 @@ namespace Group_assignment.Class
             }
         }
 
+<<<<<<< HEAD
         //Grid display
         public DataTable GetAllitem()
         {
@@ -464,6 +468,9 @@ namespace Group_assignment.Class
 
             return dt;
         }
+=======
+
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
 
 
 

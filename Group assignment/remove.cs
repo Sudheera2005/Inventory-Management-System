@@ -13,7 +13,10 @@ namespace Group_assignment
 {
     public partial class remove : Form
     {
+<<<<<<< HEAD
         //connection the controller to the remove form
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         Controller controller;
         public remove()
         {
@@ -28,13 +31,20 @@ namespace Group_assignment
 
         private void delete_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //input validation
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             if (string.IsNullOrWhiteSpace(idTxt.Text))
             {
                 MessageBox.Show("Please enter a valid product ID.");
                 return;
             }
+<<<<<<< HEAD
             //pass the user input to the controller and get the output 
+=======
+
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             string resultMessage = controller.DeleteProduct(idTxt.Text.Trim());
             MessageBox.Show(resultMessage);
 

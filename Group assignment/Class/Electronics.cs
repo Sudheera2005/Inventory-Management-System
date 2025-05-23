@@ -2,10 +2,15 @@
 
 namespace InventoryManagementSystem.Classes
 {
+<<<<<<< HEAD
     // Base class for all electronic items
     public abstract class Electronics
     {
         //attributes
+=======
+    public abstract class Electronics
+    {
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         private string model;
         private string itemType;
         private int quantity;
@@ -28,7 +33,11 @@ namespace InventoryManagementSystem.Classes
             BatchNumber = batchNumber;
             Brand = brand;
         }
+<<<<<<< HEAD
         //geters and seters
+=======
+
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         public string Model { get => model; set => model = value; }
         public string ItemType { get => itemType; set => itemType = value; }
         public int Quantity { get => quantity; set => quantity = value; }

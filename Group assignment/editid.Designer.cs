@@ -83,7 +83,10 @@
             Controls.Add(edittxt);
             Name = "editid";
             Text = "editid";
+<<<<<<< HEAD
             Load += editid_Load;
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             ResumeLayout(false);
             PerformLayout();
         }

@@ -8,19 +8,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Group_assignment.Class;
+<<<<<<< HEAD
 using Org.BouncyCastle.Asn1.Cmp;
 
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
 
 namespace Group_assignment
 {
     public partial class item : Form
     {
         Controller controller;
+<<<<<<< HEAD
         private DataTable productsData;
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         public item()
         {
             InitializeComponent();
             controller = new Controller(this);
+<<<<<<< HEAD
             dataGridView1.AutoGenerateColumns = true;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ReadOnly = true;
@@ -54,31 +61,43 @@ namespace Group_assignment
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //opne add details page without closing this page
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             addItem addItem = new addItem();
             addItem.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //open edit details page without closing this page
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             editid editid = new editid();
             editid.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //open remove details page without closing this page
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             remove remove = new remove();
             remove.Show();
         }
 
         private void item_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             // Set up auto-refresh timer (optional)  
             System.Windows.Forms.Timer refreshTimer = new System.Windows.Forms.Timer
             {
@@ -96,6 +115,9 @@ namespace Group_assignment
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             RefreshData();
+=======
+
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         }
     }
 }

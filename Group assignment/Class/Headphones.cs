@@ -1,6 +1,9 @@
 ﻿namespace InventoryManagementSystem.Classes
 {
+<<<<<<< HEAD
     // Derived class for Headphones
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
     public class Headphones : Electronics
     {
         //attributes

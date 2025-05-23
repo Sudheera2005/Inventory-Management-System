@@ -7,7 +7,10 @@ namespace Group_assignment
 {
     public partial class addItem : Form
     {
+<<<<<<< HEAD
         //connection the controller to the addItem form
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         Controller controller;
         public addItem()
         {
@@ -24,7 +27,10 @@ namespace Group_assignment
             HideAllSpecialFields();
             
         }
+<<<<<<< HEAD
         // Hide all special fields initially
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         private void HideAllSpecialFields()
         {
             // Hide all special fields
@@ -179,7 +185,30 @@ namespace Group_assignment
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+<<<<<<< HEAD
         
+=======
+        //private void ClearForm()
+        //{
+        //    modeltext.Text = "";
+        //    brandInput.Text = "";
+        //    priceInput.Text = "";
+        //    manuInput.Text = "";
+
+        //    warrInput.Text = "";
+        //    quntityInput.Text = "";
+
+        //    batchInput.Text = "";
+        //    option1.Text = "";
+        //    option2.Text = "";
+        //    option3.Text = "";
+            
+        //    wirelessclik.Checked = false;
+        //    option4.Checked = false;
+        //    dropdown.SelectedIndex = -1;
+        //    HideAllSpecialFields();
+        //}
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         private void ClearForm()
         {
             try

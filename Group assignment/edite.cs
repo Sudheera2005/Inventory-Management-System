@@ -14,11 +14,16 @@ namespace Group_assignment
 {
     public partial class edite : Form
     {
+<<<<<<< HEAD
         //connection the controller to the addItem form
         Controller controller;
         // Dictionary to hold the original product data
         private readonly Dictionary<string, object> _originalProduct;
 
+=======
+        Controller controller;
+        private readonly Dictionary<string, object> _originalProduct;
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
         private readonly string _productId;
 
         public edite(Dictionary<string, object> product)
@@ -38,7 +43,10 @@ namespace Group_assignment
         }
         private void PopulateFormFields()
         {
+<<<<<<< HEAD
             // fild the form fields with the original product data
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             modeltext.Text = _originalProduct["model"].ToString();
             brandInput.Text = _originalProduct["brand"].ToString();
             priceInput.Text = _originalProduct["price"].ToString();
@@ -196,6 +204,7 @@ namespace Group_assignment
                 updates[field] = newValue;
             }
         }
+<<<<<<< HEAD
 
         private void edite_Load(object sender, EventArgs e)
         {
@@ -206,5 +215,9 @@ namespace Group_assignment
         {
             this.Hide();
         }
+=======
+        
+        
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
     }
 }

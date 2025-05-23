@@ -28,7 +28,10 @@ namespace Group_assignment
 
         private void button2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //input validation
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             if (!int.TryParse(edittxt.Text, out int productId))
             {
                 MessageBox.Show("Please enter a valid numeric ID.");
@@ -51,16 +54,23 @@ namespace Group_assignment
 
             using (var editForm = new edite(product))
             {
+<<<<<<< HEAD
                 //open edit form and pass the product details and close this form
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
                 this.Hide();
                 editForm.ShowDialog();
                 this.Show();
             }
         }
+<<<<<<< HEAD
 
         private void editid_Load(object sender, EventArgs e)
         {
 
         }
+=======
+    
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
     }
 }

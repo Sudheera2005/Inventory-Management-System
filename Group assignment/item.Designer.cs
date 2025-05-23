@@ -33,10 +33,13 @@
             button2 = new Button();
             button3 = new Button();
             label1 = new Label();
+<<<<<<< HEAD
             mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             comboBox1 = new ComboBox();
             button4 = new Button();
             lblStatus = new TextBox();
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +55,11 @@
             // button1
             // 
             button1.BackColor = Color.Lime;
+<<<<<<< HEAD
             button1.Location = new Point(34, 370);
+=======
+            button1.Location = new Point(58, 321);
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             button1.Name = "button1";
             button1.Size = new Size(180, 45);
             button1.TabIndex = 1;
@@ -63,7 +70,11 @@
             // button2
             // 
             button2.BackColor = Color.Cyan;
+<<<<<<< HEAD
             button2.Location = new Point(323, 370);
+=======
+            button2.Location = new Point(330, 321);
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             button2.Name = "button2";
             button2.Size = new Size(180, 45);
             button2.TabIndex = 2;
@@ -74,7 +85,11 @@
             // button3
             // 
             button3.BackColor = Color.Red;
+<<<<<<< HEAD
             button3.Location = new Point(591, 370);
+=======
+            button3.Location = new Point(590, 321);
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             button3.Name = "button3";
             button3.Size = new Size(180, 45);
             button3.TabIndex = 3;
@@ -85,12 +100,17 @@
             // label1
             // 
             label1.AutoSize = true;
+<<<<<<< HEAD
             label1.Location = new Point(381, 18);
+=======
+            label1.Location = new Point(367, 51);
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             label1.Name = "label1";
             label1.Size = new Size(66, 20);
             label1.TabIndex = 4;
             label1.Text = "Products";
             // 
+<<<<<<< HEAD
             // mySqlCommand1
             // 
             mySqlCommand1.CacheAge = 0;
@@ -124,14 +144,19 @@
             lblStatus.Size = new Size(571, 27);
             lblStatus.TabIndex = 7;
             // 
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             // item
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+<<<<<<< HEAD
             Controls.Add(lblStatus);
             Controls.Add(button4);
             Controls.Add(comboBox1);
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             Controls.Add(label1);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -152,9 +177,12 @@
         private Button button2;
         private Button button3;
         private Label label1;
+<<<<<<< HEAD
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private ComboBox comboBox1;
         private Button button4;
         private TextBox lblStatus;
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
     }
 }

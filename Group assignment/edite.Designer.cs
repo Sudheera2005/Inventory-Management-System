@@ -68,7 +68,10 @@
             button2.TabIndex = 60;
             button2.Text = "Quite";
             button2.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             button2.Click += button2_Click;
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             // 
             // modeltext
             // 
@@ -342,7 +345,10 @@
             Controls.Add(label1);
             Name = "edite";
             Text = "edite";
+<<<<<<< HEAD
             Load += edite_Load;
+=======
+>>>>>>> 4155c46fec52da7e2e554674b10ff94040e421a2
             ResumeLayout(false);
             PerformLayout();
         }
