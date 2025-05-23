@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Group_assignment.Class
+﻿namespace InventoryManagementSystem.Classes
 {
-    class Smartphone:Electronics
+    // Derived class for Smartphone
+    public class Smartphone : Electronics
     {
+        //attributes
         private string ram;
         private string storage;
 
-        public Smartphone(string model, string ram, string storage, string item, int quantity, double price, string manufacturingDate, int warrantyPeriodInMonths, string batchNumber, string brand) : base(model, item, quantity, price, manufacturingDate, warrantyPeriodInMonths, batchNumber, brand)
+        public Smartphone(string model, string ram, string storage, string itemType,
+                         int quantity, double price, string manufacturingDate,
+                         int warrantyPeriodInMonths, string batchNumber, string brand)
+            : base(model, itemType, quantity, price, manufacturingDate,
+                  warrantyPeriodInMonths, batchNumber, brand)
         {
             Ram = ram;
             Storage = storage;
