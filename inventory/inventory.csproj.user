@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="From\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="From\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="From\editeid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="From\addiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="From\item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="From\RemoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
