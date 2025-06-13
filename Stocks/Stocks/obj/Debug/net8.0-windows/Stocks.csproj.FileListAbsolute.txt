@@ -1,0 +1,17 @@
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\bin\Debug\net8.0-windows\Stocks.exe
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\bin\Debug\net8.0-windows\Stocks.deps.json
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\bin\Debug\net8.0-windows\Stocks.runtimeconfig.json
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\bin\Debug\net8.0-windows\Stocks.dll
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\bin\Debug\net8.0-windows\Stocks.pdb
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.Editor.resources
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.Form1.resources
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.csproj.GenerateResource.cache
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.AssemblyInfoInputs.cache
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.AssemblyInfo.cs
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.csproj.CoreCompileInputs.cache
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.dll
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\refint\Stocks.dll
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.pdb
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\Stocks.genruntimeconfig.cache
+C:\Users\varia\Downloads\Assignment\Stocks\Stocks\obj\Debug\net8.0-windows\ref\Stocks.dll
