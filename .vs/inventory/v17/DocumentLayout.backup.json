@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Apiit\\First Year\\inventory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|D:\\Apiit\\First Year\\inventory\\inventory\\systemreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|solutionrelative:inventory\\systemreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|d:\\apiit\\first year\\inventory\\inventory\\systemreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|solutionrelative:inventory\\systemreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|d:\\apiit\\first year\\inventory\\inventory\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|solutionrelative:inventory\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|d:\\apiit\\first year\\inventory\\inventory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|solutionrelative:inventory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|D:\\Apiit\\First Year\\inventory\\inventory\\systemreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|solutionrelative:inventory\\systemreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|d:\\apiit\\first year\\inventory\\inventory\\systemreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|solutionrelative:inventory\\systemreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{891B3F09-865B-4403-A186-4F88C83128C0}|inventory\\inventory.csproj|d:\\apiit\\first year\\inventory\\inventory\\from\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
@@ -113,7 +113,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -152,12 +152,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SystemReport.cs",
               "DocumentMoniker": "D:\\Apiit\\First Year\\inventory\\inventory\\SystemReport.cs",
               "RelativeDocumentMoniker": "inventory\\SystemReport.cs",
-              "ToolTip": "D:\\Apiit\\First Year\\inventory\\inventory\\SystemReport.cs*",
-              "RelativeToolTip": "inventory\\SystemReport.cs*",
+              "ToolTip": "D:\\Apiit\\First Year\\inventory\\inventory\\SystemReport.cs",
+              "RelativeToolTip": "inventory\\SystemReport.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAowCYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-14T15:37:50.768Z",
@@ -165,32 +165,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SystemReport.cs [Design]",
               "DocumentMoniker": "D:\\Apiit\\First Year\\inventory\\inventory\\SystemReport.cs",
               "RelativeDocumentMoniker": "inventory\\SystemReport.cs",
-              "ToolTip": "D:\\Apiit\\First Year\\inventory\\inventory\\SystemReport.cs [Design]*",
-              "RelativeToolTip": "inventory\\SystemReport.cs [Design]*",
+              "ToolTip": "D:\\Apiit\\First Year\\inventory\\inventory\\SystemReport.cs [Design]",
+              "RelativeToolTip": "inventory\\SystemReport.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T15:36:28.069Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-14T15:36:28.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "controller.cs",
               "DocumentMoniker": "D:\\Apiit\\First Year\\inventory\\inventory\\Controllers\\controller.cs",
               "RelativeDocumentMoniker": "inventory\\Controllers\\controller.cs",
               "ToolTip": "D:\\Apiit\\First Year\\inventory\\inventory\\Controllers\\controller.cs",
               "RelativeToolTip": "inventory\\Controllers\\controller.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAD4v3UBAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAewHUBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T10:42:54.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Apiit\\First Year\\inventory\\inventory\\Program.cs",
               "RelativeDocumentMoniker": "inventory\\Program.cs",

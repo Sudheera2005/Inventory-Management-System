@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace inventory.Class
 {
@@ -40,5 +41,29 @@ namespace inventory.Class
         public int WarrantyPeriodInMonths { get => warrantyPeriodInMonths; set => warrantyPeriodInMonths = value; }
         public string BatchNumber { get => batchNumber; set => batchNumber = value; }
         public string Brand { get => brand; set => brand = value; }
+
+        // Abstract method to be implemented by derived classes
+        public abstract bool Save(string connectionString);
+
+        // Common method to execute SQL command
+        protected bool ExecuteNonQuery(MySqlCommand cmd, string connectionString)
+        {
+            try
+            {
+                using (var connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    cmd.Connection = connection;
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the error or handle it appropriately
+                Console.WriteLine("Error saving to database: " + ex.Message);
+                return false;
+            }
+        }
     }
 }

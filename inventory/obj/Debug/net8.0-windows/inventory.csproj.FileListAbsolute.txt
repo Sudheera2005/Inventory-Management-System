@@ -41,3 +41,8 @@ D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.From.
 D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.EditForm.resources
 D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.Form1.resources
 D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.RemoveForm.resources
+D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.sourcelink.json
+D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.EditItemID.resources
+D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.from3.resources
+D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.userform.resources
+D:\Apiit\First Year\inventory\inventory\obj\Debug\net8.0-windows\inventory.SystemReport.resources

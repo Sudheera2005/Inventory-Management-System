@@ -29,7 +29,7 @@ namespace inventory
             _productId = product["id"].ToString();
             InitializeFormData();
             PopulateFormFields();
-            
+
         }
 
         private void InitializeFormData()
@@ -215,5 +215,107 @@ namespace inventory
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var updates = new Dictionary<string, object>();
+
+            // Collect updated values
+            AddUpdateIfChanged(updates, "model", modeltext.Text);
+            AddUpdateIfChanged(updates, "brand", brandInput.Text);
+            AddUpdateIfChanged(updates, "price", priceInput.Text);
+            AddUpdateIfChanged(updates, "manufacturing_date", manuInput.Text);
+            AddUpdateIfChanged(updates, "warranty_period", warrInput.Text);
+            AddUpdateIfChanged(updates, "quantity", quntityInput.Text);
+            AddUpdateIfChanged(updates, "batch_number", batchInput.Text);
+
+            // Handle category-specific fields
+            switch (dropdown.SelectedItem.ToString())
+            {
+                case "Laptop":
+                    AddUpdateIfChanged(updates, "ram", option1.Text);
+                    AddUpdateIfChanged(updates, "gpu", option2.Text);
+                    AddUpdateIfChanged(updates, "screen_size", option3.Text);
+                    break;
+                case "Smartphone":
+                    AddUpdateIfChanged(updates, "ram", option1.Text);
+                    AddUpdateIfChanged(updates, "storage", option2.Text);
+                    break;
+                case "Smartwatch":
+                    updates["water_resistance"] = option4.Checked;
+                    break;
+                case "Headphone":
+                    updates["wireless"] = wirelessclik.Checked;
+                    updates["noise_cancellation"] = option4.Checked;
+                    break;
+            }
+
+            if (updates.Count == 0)
+            {
+                MessageBox.Show("No changes detected.");
+                return;
+            }
+
+            try
+            {
+                if (controller.UpdateProduct(updates, _productId))
+                {
+                    MessageBox.Show("Product updated successfully!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to update product.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error updating product: {ex.Message}");
+            }
+        }
+
+        private void dropdown_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            // Always hide all special fields first
+            HideAllSpecialFields();
+            string selectedItem = dropdown.SelectedItem.ToString();
+
+            switch (selectedItem)
+            {
+                case "Laptop":
+                    Gpu.Visible = true;
+                    Ram.Visible = true;
+                    Screen.Visible = true;
+                    option2.Visible = true;
+                    option3.Visible = true;
+                    option1.Visible = true;
+                    option1.Text = "RAM (GB)";
+                    option2.Text = "GPU";
+                    option3.Text = "Screen Size";
+                    break;
+
+                case "Smartphone":
+                    storege.Visible = true;
+                    Ram.Visible = true;
+                    option1.Visible = true;
+                    option2.Visible = true;
+                    option1.Text = "RAM (GB)";
+                    option2.Text = "Storage (GB)";
+                    break;
+
+                case "Smartwatch":
+                    option4.Visible = true;
+                    smart.Visible = true;
+
+                    break;
+
+                case "Headphone":
+                    option4.Visible = true;
+                    headnoice.Visible = true;
+                    wireless.Visible = true;
+                    wirelessclik.Visible = true;
+
+                    break;
+            }
+        }
     }
 }

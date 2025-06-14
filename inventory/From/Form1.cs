@@ -24,5 +24,12 @@ namespace inventory
             itemForm.Show();
             this.Hide(); // Hide the current form
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

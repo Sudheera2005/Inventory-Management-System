@@ -42,7 +42,6 @@
             option1 = new TextBox();
             Gpu = new Label();
             option2 = new TextBox();
-            ID = new Label();
             idinput = new TextBox();
             label7 = new Label();
             quntityInput = new TextBox();
@@ -59,6 +58,7 @@
             label1 = new Label();
             modeltext = new TextBox();
             dropdown = new ComboBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // button2
@@ -182,20 +182,11 @@
             option2.Size = new Size(125, 27);
             option2.TabIndex = 49;
             // 
-            // ID
-            // 
-            ID.AutoSize = true;
-            ID.Location = new Point(64, 142);
-            ID.Name = "ID";
-            ID.Size = new Size(24, 20);
-            ID.TabIndex = 48;
-            ID.Text = "ID";
-            // 
             // idinput
             // 
-            idinput.Location = new Point(203, 135);
+            idinput.Location = new Point(203, 92);
             idinput.Name = "idinput";
-            idinput.Size = new Size(125, 27);
+            idinput.Size = new Size(10, 27);
             idinput.TabIndex = 47;
             // 
             // label7
@@ -217,7 +208,7 @@
             // Warranty
             // 
             Warranty.AutoSize = true;
-            Warranty.Location = new Point(64, 336);
+            Warranty.Location = new Point(81, 300);
             Warranty.Name = "Warranty";
             Warranty.Size = new Size(114, 20);
             Warranty.TabIndex = 44;
@@ -225,7 +216,7 @@
             // 
             // warrInput
             // 
-            warrInput.Location = new Point(203, 329);
+            warrInput.Location = new Point(220, 293);
             warrInput.Name = "warrInput";
             warrInput.Size = new Size(125, 27);
             warrInput.TabIndex = 43;
@@ -233,7 +224,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(60, 281);
+            label5.Location = new Point(77, 245);
             label5.Name = "label5";
             label5.Size = new Size(137, 20);
             label5.TabIndex = 42;
@@ -241,7 +232,7 @@
             // 
             // manuInput
             // 
-            manuInput.Location = new Point(203, 274);
+            manuInput.Location = new Point(220, 238);
             manuInput.Name = "manuInput";
             manuInput.Size = new Size(125, 27);
             manuInput.TabIndex = 41;
@@ -249,7 +240,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(64, 228);
+            label4.Location = new Point(81, 192);
             label4.Name = "label4";
             label4.Size = new Size(41, 20);
             label4.TabIndex = 40;
@@ -257,7 +248,7 @@
             // 
             // priceInput
             // 
-            priceInput.Location = new Point(203, 225);
+            priceInput.Location = new Point(220, 189);
             priceInput.Name = "priceInput";
             priceInput.Size = new Size(125, 27);
             priceInput.TabIndex = 39;
@@ -265,7 +256,7 @@
             // Brand
             // 
             Brand.AutoSize = true;
-            Brand.Location = new Point(64, 175);
+            Brand.Location = new Point(81, 139);
             Brand.Name = "Brand";
             Brand.Size = new Size(48, 20);
             Brand.TabIndex = 38;
@@ -273,7 +264,7 @@
             // 
             // brandInput
             // 
-            brandInput.Location = new Point(203, 175);
+            brandInput.Location = new Point(220, 139);
             brandInput.Name = "brandInput";
             brandInput.Size = new Size(125, 27);
             brandInput.TabIndex = 37;
@@ -317,12 +308,24 @@
             dropdown.Name = "dropdown";
             dropdown.Size = new Size(151, 28);
             dropdown.TabIndex = 32;
+            dropdown.SelectedIndexChanged += dropdown_SelectedIndexChanged_1;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(503, 390);
+            button1.Name = "button1";
+            button1.Size = new Size(224, 29);
+            button1.TabIndex = 63;
+            button1.Text = "Add";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // EditForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(786, 450);
+            Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(Add);
             Controls.Add(wirelessclik);
@@ -337,7 +340,6 @@
             Controls.Add(option1);
             Controls.Add(Gpu);
             Controls.Add(option2);
-            Controls.Add(ID);
             Controls.Add(idinput);
             Controls.Add(label7);
             Controls.Add(quntityInput);
@@ -356,7 +358,7 @@
             Controls.Add(dropdown);
             Name = "EditForm";
             Text = "EditeFrom";
-            Load += this.EditForm_Load;
+            Load += EditForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -383,7 +385,6 @@
         private TextBox option1;
         private Label Gpu;
         private TextBox option2;
-        private Label ID;
         private TextBox idinput;
         private Label label7;
         private TextBox quntityInput;
@@ -400,5 +401,6 @@
         private Label label1;
         private TextBox modeltext;
         private ComboBox dropdown;
+        private Button button1;
     }
 }

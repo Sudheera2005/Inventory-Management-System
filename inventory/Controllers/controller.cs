@@ -15,33 +15,63 @@ namespace inventory.Controllers
     {
         private string connectionString = "server=localhost;uid=root;pwd=;database=inventory_management";
         private MySqlConnection connection;
+
+        // Connecting models to the controller
+        public bool AddLaptop(Laptop laptop)
+        {
+            return laptop.Save(connectionString);
+        }
+
+        public bool AddSmartphone(Smartphone smartphone)
+        {
+            return smartphone.Save(connectionString);
+        }
+
+        public bool AddSmartWatch(Smart__Watch smartWatch)
+        {
+            return smartWatch.Save(connectionString);
+        }
+
+        public bool AddHeadphones(Headphones headphones)
+        {
+            return headphones.Save(connectionString);
+        }
+
+        // Connecting the forms to the controller
         public controller(item item)
         {
             connection = new MySqlConnection(connectionString);
             InitializeDatabase();
         }
+
         public controller(addiem additem)
         {
             connection = new MySqlConnection(connectionString);
             InitializeDatabase();
         }
+
         public controller(editeid editid)
         {
             connection = new MySqlConnection(connectionString);
             InitializeDatabase();
         }
+
         public controller(EditForm edite)
         {
             connection = new MySqlConnection(connectionString);
             InitializeDatabase();
         }
+
         public controller(RemoveForm remove)
         {
             connection = new MySqlConnection(connectionString);
             InitializeDatabase();
         }
-
-
+        public controller(SystemReport report)
+        {
+            connection = new MySqlConnection(connectionString);
+            InitializeDatabase();
+        }
 
         private void InitializeDatabase()
         {
@@ -56,164 +86,8 @@ namespace inventory.Controllers
             }
         }
 
-
-        // Add methods for all product types
-        public bool AddLaptop(string model, string ram, string gpu, string screenSize,
-                            string itemType, int quantity, double price, string manufacturingDate,
-                            int warrantyPeriod, string batchNumber, string brand)
-        {
-            string query = @"INSERT INTO items_products 
-                            (item_type, model, quantity, price, manufacturing_date, 
-                             warranty_period, batch_number, brand, ram, gpu, screen_size) 
-                            VALUES 
-                            (@item_type, @model, @quantity, @price, @manufacturing_date, 
-                             @warranty_period, @batch_number, @brand, @ram, @gpu, @screen_size)";
-
-            try
-            {
-                using (MySqlCommand cmd = new MySqlCommand(query, connection))
-                {
-                    cmd.Parameters.AddWithValue("@item_type", itemType);
-                    cmd.Parameters.AddWithValue("@model", model);
-                    cmd.Parameters.AddWithValue("@quantity", quantity);
-                    cmd.Parameters.AddWithValue("@price", price);
-                    cmd.Parameters.AddWithValue("@manufacturing_date", manufacturingDate);
-                    cmd.Parameters.AddWithValue("@warranty_period", warrantyPeriod);
-                    cmd.Parameters.AddWithValue("@batch_number", batchNumber);
-                    cmd.Parameters.AddWithValue("@brand", brand);
-                    cmd.Parameters.AddWithValue("@ram", ram);
-                    cmd.Parameters.AddWithValue("@gpu", gpu);
-                    cmd.Parameters.AddWithValue("@screen_size", screenSize);
-
-                    connection.Open();
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error adding laptop: " + ex.Message);
-                return false;
-            }
-        }
-
-        public bool AddSmartphone(string model, string ram, string storage, string itemType,
-                                int quantity, double price, string manufacturingDate,
-                                int warrantyPeriod, string batchNumber, string brand)
-        {
-            string query = @"INSERT INTO items_products 
-                            (item_type, model, quantity, price, manufacturing_date, 
-                             warranty_period, batch_number, brand, ram, storage) 
-                            VALUES 
-                            (@item_type, @model, @quantity, @price, @manufacturing_date, 
-                             @warranty_period, @batch_number, @brand, @ram, @storage)";
-
-            try
-            {
-                using (MySqlCommand cmd = new MySqlCommand(query, connection))
-                {
-                    cmd.Parameters.AddWithValue("@item_type", itemType);
-                    cmd.Parameters.AddWithValue("@model", model);
-                    cmd.Parameters.AddWithValue("@quantity", quantity);
-                    cmd.Parameters.AddWithValue("@price", price);
-                    cmd.Parameters.AddWithValue("@manufacturing_date", manufacturingDate);
-                    cmd.Parameters.AddWithValue("@warranty_period", warrantyPeriod);
-                    cmd.Parameters.AddWithValue("@batch_number", batchNumber);
-                    cmd.Parameters.AddWithValue("@brand", brand);
-                    cmd.Parameters.AddWithValue("@ram", ram);
-                    cmd.Parameters.AddWithValue("@storage", storage);
-
-                    connection.Open();
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error adding smartphone: " + ex.Message);
-                return false;
-            }
-        }
-
-        public bool AddSmartWatch(string model, bool waterResistance, string itemType,
-                                int quantity, double price, string manufacturingDate,
-                                int warrantyPeriod, string batchNumber, string brand)
-        {
-            string query = @"INSERT INTO items_products 
-                            (item_type, model, quantity, price, manufacturing_date, 
-                             warranty_period, batch_number, brand, water_resistance) 
-                            VALUES 
-                            (@item_type, @model, @quantity, @price, @manufacturing_date, 
-                             @warranty_period, @batch_number, @brand, @water_resistance)";
-
-            try
-            {
-                using (MySqlCommand cmd = new MySqlCommand(query, connection))
-                {
-                    cmd.Parameters.AddWithValue("@item_type", itemType);
-                    cmd.Parameters.AddWithValue("@model", model);
-                    cmd.Parameters.AddWithValue("@quantity", quantity);
-                    cmd.Parameters.AddWithValue("@price", price);
-                    cmd.Parameters.AddWithValue("@manufacturing_date", manufacturingDate);
-                    cmd.Parameters.AddWithValue("@warranty_period", warrantyPeriod);
-                    cmd.Parameters.AddWithValue("@batch_number", batchNumber);
-                    cmd.Parameters.AddWithValue("@brand", brand);
-                    cmd.Parameters.AddWithValue("@water_resistance", waterResistance);
-
-                    connection.Open();
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error adding smartwatch: " + ex.Message);
-                return false;
-            }
-        }
-
-        public bool AddHeadphones(string model, bool wireless, bool noiseCancellation,
-                                string itemType, int quantity, double price,
-                                string manufacturingDate, int warrantyPeriod,
-                                string batchNumber, string brand)
-        {
-            string query = @"INSERT INTO items_products 
-                            (item_type, model, quantity, price, manufacturing_date, 
-                             warranty_period, batch_number, brand, wireless, noise_cancellation) 
-                            VALUES 
-                            (@item_type, @model, @quantity, @price, @manufacturing_date, 
-                             @warranty_period, @batch_number, @brand, @wireless, @noise_cancellation)";
-
-            try
-            {
-                using (MySqlCommand cmd = new MySqlCommand(query, connection))
-                {
-                    cmd.Parameters.AddWithValue("@item_type", itemType);
-                    cmd.Parameters.AddWithValue("@model", model);
-                    cmd.Parameters.AddWithValue("@quantity", quantity);
-                    cmd.Parameters.AddWithValue("@price", price);
-                    cmd.Parameters.AddWithValue("@manufacturing_date", manufacturingDate);
-                    cmd.Parameters.AddWithValue("@warranty_period", warrantyPeriod);
-                    cmd.Parameters.AddWithValue("@batch_number", batchNumber);
-                    cmd.Parameters.AddWithValue("@brand", brand);
-                    cmd.Parameters.AddWithValue("@wireless", wireless);
-                    cmd.Parameters.AddWithValue("@noise_cancellation", noiseCancellation);
-
-                    connection.Open();
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error adding headphones: " + ex.Message);
-                return false;
-            }
-        }
+        // Removed duplicate definitions of AddLaptop, AddSmartphone, AddSmartWatch, and AddHeadphones methods
+        // The duplicate methods were already defined earlier in the class, so they were safely removed.
 
         // Get all products
         public List<Dictionary<string, object>> GetAllProducts()
@@ -273,7 +147,8 @@ namespace inventory.Controllers
                 return false;
             }
         }
-        //Delete iterm
+
+        // Delete item
         public string DeleteProduct(string id)
         {
             string checkQuery = "SELECT COUNT(*) FROM items_products WHERE id = @id";
@@ -321,9 +196,7 @@ namespace inventory.Controllers
             }
         }
 
-
         // Get item by ID for editing
-        // In Controller class
         public Dictionary<string, object> GetProductById(string id)
         {
             string query = "SELECT * FROM items_products WHERE id = @id";
@@ -416,7 +289,7 @@ namespace inventory.Controllers
             }
         }
 
-        //Grid display
+        // Grid display
         public DataTable GetAllitem()
         {
             DataTable dt = new DataTable();
@@ -470,8 +343,37 @@ namespace inventory.Controllers
             return dt;
         }
 
+        //system report
+        public DataTable GetProducts()
+        {
+            DataTable dt = new DataTable();
 
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                string query = @"SELECT 
+                                item_type AS 'Type',
+                                model AS 'Model',
+                                brand AS 'Brand',
+                                price AS 'Price',
+                                quantity
+                                FROM items_products
+                                ORDER BY brand, model";
 
+                new MySqlDataAdapter(query, conn).Fill(dt);
+            }
+            return dt;
+        }
 
+        public DataTable GetUsers()
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                string query = "SELECT username FROM userses ORDER BY username";
+                new MySqlDataAdapter(query, conn).Fill(dt);
+            }
+            return dt;
+        }
     }
 }
